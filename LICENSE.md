@@ -15,4 +15,4 @@ GNU General Public License for more details.
 > © medienreaktor GmbH
 > All rights reserved
 
-This copyright notice MUST APPEAR in all copies of the repository!
+This copyright notice MUST APPEAR in all copies of the repository.

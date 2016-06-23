@@ -2,10 +2,10 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'News Instant Articles',
-	'description' => 'Generates a Facebook Instant Articles RSS-Feed',
+	'description' => 'Generates Facebook Instant Articles RSS-Feed',
 	'category' => 'frontend',
 	'shy' => 0,
-	'version' => '1.0.1',
+	'version' => '1.0.2',
 	'dependencies' => 'news,typo3',
 	'conflicts' => '',
 	'priority' => '',

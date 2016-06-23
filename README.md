@@ -2,7 +2,7 @@
 
 ![News Instant Articles](ext_icon.png)
 
-Generates a Facebook Instant Articles :zap: RSS-feed for TYPO3 extension "news" (tx_news).
+Generates Facebook Instant Articles :zap: RSS-feed for TYPO3 extension "news" (tx_news).
 
 ## Installation
 
