@@ -34,7 +34,6 @@ class ContentTransformViewHelper extends \TYPO3\CMS\Fluid\Core\ViewHelper\Abstra
         $content = str_replace('</h5>', '</h2>', $content);
         $content = str_replace('<h6>', '<h2>', $content);
         $content = str_replace('</h6>', '</h2>', $content);
-        $content = str_replace('<h3>', '<h2>', $content);
         $content = str_replace(' class="bodytext"', '', $content);
 
         return $content;
