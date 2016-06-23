@@ -34,16 +34,16 @@ instantarticles {
 plugin.tx_news {
 	view {
 		templateRootPaths {
-			100 = EXT:news_instantarticles/Resources/Private/Templates/
+			100 = EXT:news_ia/Resources/Private/Templates/
 		}
 		partialRootPaths {
-			100 = EXT:news_instantarticles/Resources/Private/Partials/
+			100 = EXT:news_ia/Resources/Private/Partials/
 		}
 	}
 	settings {
 		instantarticles {
-			language = {$plugin.tx_news_instantarticles.settings.language}
-			articleStyle = {$plugin.tx_news_instantarticles.settings.articleStyle}
+			language = {$plugin.tx_news_ia.settings.language}
+			articleStyle = {$plugin.tx_news_ia.settings.articleStyle}
 		}
 	}
 }

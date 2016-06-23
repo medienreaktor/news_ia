@@ -1,5 +1,5 @@
 {
-    "name": "medienreaktor/news_instantarticles",
+    "name": "medienreaktor/news_ia",
     "description": "Generates a Facebook Instant Articles RSS-feed for TYPO3 extension news",
     "require": {
         "php": ">=5.4.0"
