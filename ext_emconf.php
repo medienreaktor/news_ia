@@ -6,7 +6,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'category' => 'frontend',
 	'shy' => 0,
 	'version' => '1.0.1',
-	'dependencies' => 'fluid,news,typo3',
+	'dependencies' => 'news,typo3',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
@@ -25,7 +25,6 @@ $EM_CONF[$_EXTKEY] = array(
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '4.5.0-8.9.99',
-			'fluid' => '',
 			'news' => '4.0.0-4.9.99',
 		),
 		'conflicts' => array(
