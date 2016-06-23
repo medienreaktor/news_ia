@@ -22,68 +22,12 @@
 <f:section name="Header">
     <header>
         <f:if condition="{newsItem.falMedia}">
-            <f:render section="Media" arguments="{media: newsItem.falMedia}" />
+            <f:render partial="News/Media" section="Media" arguments="{media: newsItem.falMedia}" />
         </f:if>
         <h1>{newsItem.title}</h1>
         <f:if condition="{newsItem.teaser}"><h2>{newsItem.teaser}</h2></f:if>
         <f:if condition="{newsItem.author}"><address>{newsItem.author}</address></f:if>
     </header>
-</f:section>
-
-<f:section name="Media">
-    <f:if condition="{media -> f:count()} == 1">
-        <f:then>
-            <f:render section="MediaElement" arguments="{mediaElement: media.0}" />
-        </f:then>
-        <f:else>
-            <figure class="op-slideshow">
-                <f:for each="{media}" as="mediaElement">
-                    <f:render section="MediaElement" arguments="{mediaElement: mediaElement}" />
-                </f:for>
-            </figure>
-        </f:else>
-    </f:if>
-</f:section>
-
-<f:section name="MediaElement">
-    <f:if condition="{mediaElement.originalResource.type} == 2">
-		<f:render section="MediaElementImage" arguments="{mediaElement: mediaElement}" />
-	</f:if>
-    <f:if condition="{mediaElement.originalResource.type} == 5">
-		<f:render section="MediaElementImage" arguments="{mediaElement: mediaElement}" />
-	</f:if>
-	<f:if condition="{mediaElement.originalResource.type} == 4">
-		<f:render section="MediaElementVideo" arguments="{mediaElement: mediaElement}" />
-	</f:if>
-</f:section>
-
-<f:section name="MediaElementCaption">
-    <f:if condition="{mediaElement.title}">
-        <figcaption class="op-vertical-bottom">
-            <f:if condition="{mediaElement.title}">
-                <h1 class="op-vertical-bottom">{mediaElement.title}</h1>
-            </f:if>
-            {mediaElement.description}
-        </figcaption>
-    </f:if>
-</f:section>
-
-<f:section name="MediaElementImage">
-    <figure data-feedback="fb:likes,fb:comments">
-        <f:image src="{mediaElement.uid}" treatIdAsReference="1" minWidth="1024" minHeight="1024" maxWidth="2048" maxHeight="2048" />
-        <f:render section="MediaElementCaption" arguments="{mediaElement: mediaElement}" />
-    </figure>
-</f:section>
-
-<f:section name="MediaElementVideo">
-    <f:if condition="{mediaElement.originalResource.mimeType} == 'video/mp4'">
-        <figure data-feedback="fb:likes,fb:comments">
-            <video>
-                <source src="{f:uri.image(src: mediaElement.uid, treatIdAsReference: 1)}" type="video/mp4" />
-            </video>
-            <f:render section="MediaElementCaption" arguments="{mediaElement: mediaElement}" />
-        </figure>
-    </f:if>
 </f:section>
 
 <f:section name="Body">
