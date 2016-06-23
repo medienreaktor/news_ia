@@ -25,7 +25,7 @@ instantarticles {
 	config {
     	disableAllHeaderCode = 1
     	additionalHeaders = Content-type:application/xml
-    	no_cache = 1
+    	no_cache = 0
     	xhtml_cleaning = 0
 	}
 }
@@ -35,6 +35,15 @@ plugin.tx_news {
 	view {
 		templateRootPaths {
 			100 = EXT:news_instantarticles/Resources/Private/Templates/
+		}
+		partialRootPaths {
+			100 = EXT:news_instantarticles/Resources/Private/Partials/
+		}
+	}
+	settings {
+		instantarticles {
+			language = {$plugin.tx_news_instantarticles.settings.language}
+			articleStyle = {$plugin.tx_news_instantarticles.settings.articleStyle}
 		}
 	}
 }
