@@ -11,8 +11,22 @@ instantarticles {
 		controller = News
 		action = list
 
+		view {
+			templateRootPaths {
+				100 = EXT:news_ia/Resources/Private/Templates/
+			}
+			partialRootPaths {
+				100 = EXT:news_ia/Resources/Private/Partials/
+			}
+		}
+
         settings {
             format = xml
+
+			instantarticles {
+				language = {$plugin.tx_news_ia.settings.language}
+				articleStyle = {$plugin.tx_news_ia.settings.articleStyle}
+			}
         }
 
 		switchableControllerActions {
@@ -29,22 +43,3 @@ instantarticles {
     	xhtml_cleaning = 0
 	}
 }
-
-[globalVar = TSFE:type=800]
-plugin.tx_news {
-	view {
-		templateRootPaths {
-			100 = EXT:news_ia/Resources/Private/Templates/
-		}
-		partialRootPaths {
-			100 = EXT:news_ia/Resources/Private/Partials/
-		}
-	}
-	settings {
-		instantarticles {
-			language = {$plugin.tx_news_ia.settings.language}
-			articleStyle = {$plugin.tx_news_ia.settings.articleStyle}
-		}
-	}
-}
-[global]
