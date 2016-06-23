@@ -1,4 +1,5 @@
 {namespace n=GeorgRinger\News\ViewHelpers}
+{namespace i=Medienreaktor\NewsInstantArticles\ViewHelpers}
 <f:section name="Content">
     <!doctype html>
     <html lang="{settings.instantarticles.language}" prefix="op: http://media.facebook.com/op#">
@@ -59,13 +60,12 @@
 </f:section>
 
 <f:section name="Body">
-    <f:format.html>{newsItem.bodytext}</f:format.html>
-
-    <f:comment>
-    <f:if condition="{newsItem.contentElements}">
-		<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
-	</f:if>
-    </f:comment>
+    <i:contentTransform>
+        <f:format.html>{newsItem.bodytext}</f:format.html>
+        <f:if condition="{newsItem.contentElements}">
+    		<f:cObject typoscriptObjectPath="lib.tx_news.contentElementRendering">{newsItem.contentElementIdList}</f:cObject>
+    	</f:if>
+    </i:contentTransform>
 </f:section>
 
 <f:section name="Footer">

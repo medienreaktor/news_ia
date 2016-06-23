@@ -1,11 +1,13 @@
 # TYPO3-Extension "news_instantarticles"
 
-Generates a Facebook Instant Articles RSS-feed for TYPO3 extension "news" (tx_news).
+![News Instant Articles](ext_icon.png)
+
+Generates a Facebook Instant Articles :zap: RSS-feed for TYPO3 extension "news" (tx_news).
 
 ## Installation
 
- * Install and configure "news" (tx_news)
- * Install "news_instantarticles" (tx_news_instantarticles)
+ * Install and configure "news"
+ * Install "news_instantarticles"
  * Include static template "News Instant Articles"
 
 Please configure the page to use absolute URLs. You can do this either globally via
@@ -57,4 +59,4 @@ Of course, you can generate speaking URLs using CoolURI or RealUrl. Then you can
 
 ## Publishing
 
-Publish your new RSS-feed as described in the Facebook Instant Articles documentation: https://developers.facebook.com/docs/instant-articles/publishing/setup-rss-feed
+Publish your new RSS-feed as described in the [Facebook Instant Articles documentation](https://developers.facebook.com/docs/instant-articles/publishing/setup-rss-feed).
