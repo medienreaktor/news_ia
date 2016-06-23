@@ -47,7 +47,7 @@
 
 <f:section name="MediaElement">
     <figure data-feedback="fb:likes,fb:comments">
-        <f:image src="{mediaElement.uid}" treatIdAsReference="1" />
+        <f:image src="{mediaElement.uid}" treatIdAsReference="1" minWidth="1024" minHeight="1024" maxWidth="2048" maxHeight="2048" />
         <f:if condition="{mediaElement.title}">
             <figcaption class="op-vertical-bottom">
                 <f:if condition="{mediaElement.title}">
