@@ -1,4 +1,4 @@
-# TYPO3-Extension "news_instantarticles"
+# TYPO3-Extension "news_ia"
 
 ![News Instant Articles](ext_icon.png)
 
@@ -7,7 +7,7 @@ Generates a Facebook Instant Articles :zap: RSS-feed for TYPO3 extension "news" 
 ## Installation
 
  * Install and configure "news"
- * Install "news_instantarticles"
+ * Install "news_ia"
  * Include static template "News Instant Articles"
 
 Please configure the page to use absolute URLs. You can do this either globally via
