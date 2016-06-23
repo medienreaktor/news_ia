@@ -1,8 +1,12 @@
 {
     "name": "medienreaktor/news_ia",
+    "version": "1.0.1",
     "description": "Generates a Facebook Instant Articles RSS-feed for TYPO3 extension news",
     "require": {
-        "php": ">=5.4.0"
+        "php": ">=5.4.0",
+        "typo3/cms-core": "~7.6.0||~8.1.0||dev-master",
+        "typo3/cms": "^7.6.0",
+        "typo3-ter/news": "~4.0.0"
     },
     "autoload": {
         "psr-4": {
@@ -10,10 +14,17 @@
         }
     },
     "type": "typo3-cms-extension",
-    "keywords": ["TYPO3", "news", "facebook"],
-    "homepage": "https://www.medienreaktor.de",
+    "keywords": ["TYPO3", "News", "Facebook", "Instant Articles"],
+    "homepage": "https://github.com/medienreaktor/news_ia",
     "license": "GPL-2.0+",
-    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Daniel Kestler",
+            "email": "daniel.kestler@medienreaktor.de",
+            "role": "Developer",
+            "homepage": "https://github.com/danielkestler"
+        }
+    ],
     "suggest": {
 
     }
