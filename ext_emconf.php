@@ -6,7 +6,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'category' => 'frontend',
 	'shy' => 0,
 	'version' => '1.0.0',
-	'dependencies' => 'fluid,news',
+	'dependencies' => 'fluid,news,typo3',
 	'conflicts' => '',
 	'priority' => '',
 	'loadOrder' => '',
@@ -24,7 +24,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'CGLcompliance_note' => '',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '4.5-8.9.99',
+			'typo3' => '4.5.0-8.9.99',
 			'fluid' => '',
 			'news' => '',
 		),
