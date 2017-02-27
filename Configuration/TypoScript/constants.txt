@@ -1,7 +1,7 @@
 plugin.tx_news_ia {
 	settings {
 		# cat=plugin.tx_news_ia/settings/0010; type=string; label=Language (two letters)
-		language = en
+		language = de
 		# cat=plugin.tx_news_ia/settings/0020; type=string; label=Facebook Article Style
 		articleStyle = default
 	}

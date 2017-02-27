@@ -6,7 +6,7 @@
         <head>
             <meta charset="utf-8">
             <link rel="canonical" href="{n:link(newsItem: newsItem, settings: settings, uriOnly: 1)}">
-            <title><n:format.hsc>{newsItem.title}</n:format.hsc></title>
+            <title><f:format.htmlspecialchars>{newsItem.title}</f:format.htmlspecialchars></title>
             <meta property="fb:article_style" content="{settings.instantarticles.articleStyle}">
         </head>
         <body>
