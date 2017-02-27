@@ -5,7 +5,7 @@ $EM_CONF[$_EXTKEY] = array(
 	'description' => 'Generates Facebook Instant Articles RSS-Feed',
 	'category' => 'frontend',
 	'shy' => 0,
-	'version' => '1.1.0',
+	'version' => '1.1.1',
 	'dependencies' => 'news,typo3',
 	'conflicts' => '',
 	'priority' => '',
@@ -32,7 +32,6 @@ $EM_CONF[$_EXTKEY] = array(
 		'suggests' => array(
 		),
 	),
-	'_md5_values_when_last_written' => 'a:0:{}',
 	'suggests' => array(
 	),
 );
